@@ -1,0 +1,21 @@
+.profile-container {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  padding: 2.2rem;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+.profile-container button {
+  margin-top: 1.5rem;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: white;
+  cursor: pointer;
+}
