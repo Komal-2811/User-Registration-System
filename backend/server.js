@@ -15,11 +15,11 @@ app.use(express.json());
 // API routes
 app.use("/api/auth", require("./routes/authRoutes"));
 
-// Serve frontend build
+// Serve frontend
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-// React fallback
-app.get("*", (req, res) => {
+// React fallback (Express 5 safe)
+app.use((req, res) => {
   res.sendFile(
     path.join(__dirname, "../frontend/build/index.html")
   );
